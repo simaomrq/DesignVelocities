@@ -1,1 +1,12 @@
-run su2_dot_ad with each of the adjoint files after each adjoint calculation.
+Notes
+
+The strategy on my python script (I'll add it later) is to:
+1. run SU2_DEF with deformation cfg file
+2. run direct case
+3. run adjoint_cd
+3.1 run su2_dot_ad for cd
+4. run adjoint contraint 
+4.1 run su2_dot_ad for constraint
+5. go to 1.
+
+To use these files check mesh file names and for su2_def check surface file name and mesh file name (should be original here) for deformation script.
